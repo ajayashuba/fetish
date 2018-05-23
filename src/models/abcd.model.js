@@ -3,7 +3,8 @@ const path = require('path');
 
 module.exports = function (app) {
   const dbPath = app.get('nedb');
-  const Model = new NeDB({
+  console.log(dbPath)
+const Model = new NeDB({
     filename: path.join(dbPath, 'abcd.db'),
     autoload: true
   });
